@@ -3,13 +3,9 @@ touchCoordinates = [];
 lastCoordinates = '';
 
 function onClick(event) {
-  const h = this.height;
-  const w = this.width;
-  const x = event.offsetX;
-  const y = event.offsetY;
-  touchCoordinates.push(
-    `t:${Math.round(100*x/w)}:${Math.round(100*y/h)}`
-  );
+  const imgX = Math.round(100 * event.offsetX / this.width );
+  const imgY = Math.round(100 * event.offsetY / this.height);
+  touchCoordinates.push(`t:${imgX}:${imgY}`);
   lastCoordinates = touchCoordinates.join(',');
   console.log(lastCoordinates);
 }
