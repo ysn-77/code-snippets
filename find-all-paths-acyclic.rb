@@ -33,13 +33,7 @@ class DirectedGraph
 end
 
 
-33
 
-end
-
-34
-
-​
 def paths_between(node1, node2, edge_pairs)
 	graph = DirectedGraph.new(edge_pairs)
 	graph.paths_between(node1, node2)
