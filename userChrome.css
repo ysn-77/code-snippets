@@ -1,0 +1,37 @@
+/*
+#main-window #PersonalToolbar {
+  visibility: collapse !important;
+  opacity:0 !important;
+  margin-top: -23px !important;
+  transition: all 0.2s ease 0.2s !important;
+}
+
+#main-window[title^="Mozilla Firefox"] #PersonalToolbar,
+#main-window[title^="about:newtab"] #PersonalToolbar,
+#main-window[title^="New Tab"] #PersonalToolbar,
+#main-window[title^="Firefox"] #PersonalToolbar,
+#main-window[title^="Nightly"] #PersonalToolbar {
+  visibility: visible !important;
+  margin-top: 0px !important;
+  transition: all 0.2s ease 0.2s !important;
+  opacity: 1 !important;
+}
+*/
+
+#tabbar tab-item:not(:hover) tab-closebox {
+  display: none;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+#TabsToolbar { visibility: collapse !important; }
+
+#context-back image,
+#context-forward image,
+#context-reload image,
+#context-stop image,
+#context-bookmarkpage image,
+#context-navigation,
+#context-sep-navigation {
+    display:none !important;
+}
