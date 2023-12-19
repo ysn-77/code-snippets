@@ -14,7 +14,7 @@ git log --no-merges --pretty=format:%an --numstat | awk '/./ && !author { author
 # youtube-dl -f bestaudio --no-playlist -q -x --audio-format "best" --audio-quality 2
 # youtube-dl -x --audio-format mp3 --audio-quality 4
 DOWNLOAD_AUDIO() {
-    yt-dlp -f bestaudio --no-playlist -q -x --audio-format "best" --audio-quality 2 "$1"
+  yt-dlp -f bestaudio --no-playlist -q -x --audio-format "best" --audio-quality 2 "$1"
 }
 
 GIT_PRINT_CURRENT_BRANCH() {
@@ -32,7 +32,7 @@ GIT_SET_USER() {
 }
 
 GIT_REBASE_MASTER() {
-    git checkout master && git pull && git checkout - && git rebase master
+  git checkout master && git pull && git checkout - && git rebase master
 }
 
 KILL_BY_PORT_NUMBER() {
